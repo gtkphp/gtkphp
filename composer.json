@@ -9,5 +9,7 @@
             "email": "glash.gnome@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-gtk": "*"
+    }
 }
