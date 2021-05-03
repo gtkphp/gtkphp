@@ -1,4 +1,4 @@
-# gtkphp
+# PHP wrapper for GTK+
 
 Wrapper of Gtk+
 
