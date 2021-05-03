@@ -1,0 +1,13 @@
+{
+    "name": "gnome/gtkphp",
+    "description": "Php Bindings for GNOME",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Glash Gnome",
+            "email": "glash.gnome@gmail.com"
+        }
+    ],
+    "require": {}
+}
