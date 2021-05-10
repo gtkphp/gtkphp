@@ -21,9 +21,13 @@ class Context extends \cairo_t {
     return \cairo_scale($this, $x, $sy);
   }
   // 1-2 Paths
-  public function scale():Path {
+  public function copyPath():Path {
     return \cairo_copy_path($this);
   }
+  public function appendPath(Path $path) {
+    \cairo_append_path($this, $path);
+  }
+  
   // 2 Fonts
   // 3 Surfaces
   // 4 Utilities
