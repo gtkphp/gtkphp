@@ -8,7 +8,7 @@ use Cairo\Path;
 class Context extends \cairo_t {
   
   static public function Create(Surface $surface) {
-    return new \cairo_t($surface);
+    return \cairo_create($surface);
   }
   
   public function status():int {
