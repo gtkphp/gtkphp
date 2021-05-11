@@ -9,7 +9,7 @@ class Context extends \cairo_t {
   
   protected function __construct(Surface $surface) {
     parent::__construct();
-    cairo_set_source_surface ($this, $surface, 0, 0);
+    \cairo_set_source_surface ($this, $surface, 0, 0);
   }
   
   /**
