@@ -7,10 +7,9 @@ use Cairo\Path;
 
 class Context extends \cairo_t {
   
-  protected function __construct(Surface $surface) {
-    parent::__construct();
-    \cairo_set_source_surface ($this, $surface, 0, 0);
-  }
+  //protected function __construct(\cairo_t $cr) {
+  //  parent::__construct($cr);
+  //}
   
   /**
    * Creates a new cairo_t with all graphics state parameters
@@ -20,7 +19,7 @@ class Context extends \cairo_t {
    * @return a new cairo context.
    */
   static public function Create(Surface $target):Context {
-    return new Context($target);
+    return new Context(\cairo_create($target));
   }
   
   public function status():int {
