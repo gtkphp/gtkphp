@@ -2,6 +2,15 @@
 
 namespace Cairo;
 
+/**
+ * $path = new Cairo\Path();
+ * $path->moveTo(0.0, 0.0);
+ * $path->lineTo(0.0, 0.0);
+ * $path->lineTo(0.0, 0.0);
+ *
+ * $cr->appendPath($path);
+ *
+ */
 class Path extends \cairo_path_t implements \Iterator {
   // public:
     // status:int
