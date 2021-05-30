@@ -4,6 +4,8 @@
  */
 
 if (!extension_loaded("gtk")) die("Gtk+ not loaded");
+require(__DIR__."/../lib/Gtk/3.php");//  die("Gtk+3 unsupported, you use : %s");
+//require(__DIR__."/../lib/Gtk/4.php");
 
 require_once(__DIR__."/../lib/Gtk.php");
 require_once(__DIR__."/../lib/Gtk/Window.php");
