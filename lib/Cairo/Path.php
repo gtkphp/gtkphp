@@ -30,8 +30,18 @@ namespace Cairo;
  *    }
  * }
  *
+ * foreach($path as $segment){
+ *  match($segment) {
+ *    $element instanceof PathMove => echo 'M'.$segment->points[0]->x.' '.$segment->points[0]->y,
+ *    $element instanceof PathLine => echo 'L'.$segment->points[0]->x.' '.$segment->points[0]->y,
+ *    $element instanceof PathCurve => echo 'C'.$segment->points[0]->x.' '.$segment->points[0]->y,
+ *    $element instanceof PathClose => echo 'Z',
+ *  }
+ * }
+ *
  */
 class Path extends \cairo_path_t {
+    const MoveToElement = 0;
     /*public function arc(float $xc, float $yc, float $radius, float $angle1, float $angle2) {
         
     }*/
