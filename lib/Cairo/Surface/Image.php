@@ -14,7 +14,7 @@ class Image extends Surface {
    * @param int $stride
    * @param mixed $data
    */
-  static public function Create(Format $format, int $width, int $height, int $stride=0, $data=null):ImageSurface {
+  static public function Create(Format $format, int $width, int $height, int $stride=0, $data=null):Surface {
     if (empty($data)) {
       return \cairo_image_surface_create ($format, $width, $height);
     } else {
