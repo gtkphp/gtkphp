@@ -16,12 +16,12 @@ class Path extends \cairo_path_t {
         
     }*/
   
-    public function moveTo($x, $y) {
+    public function moveTo(float $x, float $y) {
       $this->data[] = new \cairo_path_data_t(CAIRO_PATH_DATA_MOVE_TO);
       $this->data[] = new \cairo_path_data_t($x, $y);
     }
 
-    public function lineTo($x, $y) {
+    public function lineTo(float $x, float $y) {
       $this->data[] = new \cairo_path_data_t(CAIRO_PATH_DATA_LINE_TO);
       $this->data[] = new \cairo_path_data_t($x, $y);
     }
