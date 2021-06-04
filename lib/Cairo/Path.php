@@ -32,10 +32,10 @@ namespace Cairo;
  *
  * foreach($path as $segment){
  *  match($segment) {
- *    $element instanceof PathMove => echo 'M'.$segment->points[0]->x.' '.$segment->points[0]->y,
- *    $element instanceof PathLine => echo 'L'.$segment->points[0]->x.' '.$segment->points[0]->y,
- *    $element instanceof PathCurve => echo 'C'.$segment->points[0]->x.' '.$segment->points[0]->y,
- *    $element instanceof PathClose => echo 'Z',
+ *    $element instanceof PathMove => echo 'M'.$segment->x.' '.$segment->y,
+ *    $element instanceof PathLine => echo 'L'.$segment->x.' '.$segment->y,
+ *    $element instanceof PathCurve => echo $segment->x1.' '.$segment->y1,
+ *    $element instanceof PathClose => echo $segment->toString(),
  *  }
  * }
  *
