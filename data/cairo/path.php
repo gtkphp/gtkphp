@@ -9,17 +9,17 @@
  */
 class cairo_path_t {
     /**
-     * 
-     * @var cairo_status_t
+     * One value of cairo_status_t
+     * @var int
      */
     public $status;
     /**
-     * 
-     * @var cairo_path_data_t
+     * array of cairo_path_data_t
+     * @var array
      */
     public $data;
     /**
-     * 
+     * Nupmber of data
      * @var int
      */
     public $num_data;
