@@ -10,8 +10,16 @@ class WidgetTest extends Gtk\Widget {
        ->lineTo(100, 100);
     $cr->paint();
   }
+  public function getPreferredSize(Gtk\Requisition &$minimum_size, Gtk\Requisition &$natural_size) {
+    $minimum_size = 100;
+    $natural_size = 160;
+  }
 }
 
 Gtk\Init($argc, $argv);
-$window = Gtk\Window()->add(WidgetTest())->showAll();
+$window = new Gtk\Window();
+$window->add(new Gtk\Button())
+       ->add(new WidgetTest())
+       ->add(new Gtk\Button())
+       ->showAll();
 $status = Gtk\Main();
