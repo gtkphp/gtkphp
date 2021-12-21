@@ -2,11 +2,19 @@
 
 $list = GList('guest', 'member');
 
-$list->append('admin');// g_list_append()
+$list[] = 'admin';
+
+foreach ($list as $item) {
+  echo $item->data, PHP_EOL;
+}
 
 var_dump($list);
+var_dump((array)$list);
 
 ?>
+guest
+member
+admin
 object(GList)#1 {
   prev: null,
   data: string(5) "guest",
@@ -19,4 +27,9 @@ object(GList)#1 {
       next: null,
     },
   },
+}
+array(3)#1 {
+  0 => string(5) "guest",
+  1 => string(6) "member",
+  2 => string(5) "admin",
 }
