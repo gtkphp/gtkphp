@@ -1,6 +1,6 @@
 <?php
 
-#include <gtk>
+#include <glib>
 
 try {
   throw new GError('HTTP', 404, "Not Found: %s", '...');
