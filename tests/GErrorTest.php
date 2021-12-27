@@ -2,6 +2,8 @@
 
 #include <gtk>
 
-// GError need to extends/implemente Error
-$gerror = new GError('HTTP', 404, "Not Found: %s", '...');
-throw $gerror;
+try {
+  throw new GError('HTTP', 404, "Not Found: %s", '...');
+} catch (Error $e){
+  // GError implements Error
+}
