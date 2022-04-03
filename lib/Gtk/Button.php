@@ -7,7 +7,7 @@ use Bin;
 trait __Button {
     use __Bin;
     public function setLabel(string $label) {
-        \gtk_button_set_label($this, $widget);
+        \gtk_button_set_label($this, $label);
     }
 }
 
