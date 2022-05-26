@@ -1,10 +1,7 @@
 <?php
 
-<?php
-
 /**
- * All the fields in the GObject structure are private to the GObject implementation
- * and should never be accessed directly.
+ * 
  */
 class GObject extends GType
 {
@@ -23,14 +20,14 @@ class GObject extends GType
   
   public function __get(string $name):mixed {
   }
-  
-  /* seldom overidden */
-  public function dispatch_properties_changed(int	         $n_pspecs,
-					                                    GParamSpec[] $pspecs){
+
+  /** @signal */
+  public function __notify(GParamSpec $pspec) {
   }
-  
-  /* signals */
-  public function notify(GParamSpec $pspec) {
+
+  /* seldom overidden */
+  public function dispatch_properties_changed(int	   $n_pspecs,
+					      GParamSpec[] $pspecs){
   }
 
 }
