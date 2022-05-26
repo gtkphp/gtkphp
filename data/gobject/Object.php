@@ -9,6 +9,7 @@ class GObject extends GType
   public function __construct() {
     // Internal implementation
     //g_object_class_install_property();
+    g_signal_new();
   }
   
   public function __destruct() {
