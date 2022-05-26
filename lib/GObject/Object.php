@@ -2,8 +2,7 @@
 
 namespace G;
 
-class Object extends GObject
-{
+trait __Object {
   /**
    * Sets a property on an object.
    * @param GObject $object a GObject
@@ -13,5 +12,9 @@ class Object extends GObject
   function setProperty (string $property_name, GValue $value) {
     g_object_set_property($this, $property_name, $value);
   }
-  
+}
+
+class Object extends GObject
+{
+  use __Object;
 }
