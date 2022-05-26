@@ -1,9 +1,44 @@
 <?php
 
-
-class GObject
+/**
+ * All the fields in the GObject structure are private to the GObject implementation
+ * and should never be accessed directly.
+ */
+class GObject extends GType
 {
-  // opaque
+  /* seldom overidden */
+  public function constructor(GType                 $type,
+                              guint                 $n_construct_properties,
+                              GObjectConstructParam $construct_properties): GObject;
+  
+  /* overridable methods */
+  public function set_property(int           $property_id,
+                               GValue        $value,
+                               GParamSpec    $pspec) {
+  }
+  
+  public function get_property(int           $property_id,
+                               GValue        $value,
+                               GParamSpec    $pspec) {
+  }
+  public function dispose(){
+  }
+  public function finalize(){
+  }
+  
+  /* seldom overidden */
+  public function dispatch_properties_changed(int	         $n_pspecs,
+					                                    GParamSpec[] $pspecs){
+  }
+  
+  /* signals */
+  public function notify(GParamSpec $pspec) {
+  }
+
+  /* called when done constructing */
+  public function constructed() {
+  }
+
 }
 
 
