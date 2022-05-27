@@ -8,8 +8,6 @@ class GObject extends GType
   /* seldom overidden */
   public function __construct() {
     // Internal implementation
-    //g_object_class_install_property();
-    g_signal_new();
   }
   
   public function __destruct() {
@@ -25,10 +23,4 @@ class GObject extends GType
   /** @signal */
   public function __notify(GParamSpec $pspec) {
   }
-
-  /* seldom overidden */
-  public function dispatch_properties_changed(int	   $n_pspecs,
-					      GParamSpec[] $pspecs){
-  }
-
 }
