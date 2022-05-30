@@ -3,7 +3,7 @@
 /**
  * 
  */
-class GObject extends GType
+class GObject extends GTypeInstance
 {
   /* seldom overidden */
   public function __construct() {
