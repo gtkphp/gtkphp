@@ -1,5 +1,15 @@
 <?php
 
+class GTypeClass extends GType
+{
+}
+function g_type_name (GType $type):string {}
+
+
+class GTypeInstance extends GTypeClass
+{
+}
+
 /**
  * All the fields in the GObject structure are private to the GObject implementation
  * and should never be accessed directly.
