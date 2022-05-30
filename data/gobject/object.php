@@ -4,7 +4,7 @@
  * All the fields in the GObject structure are private to the GObject implementation
  * and should never be accessed directly.
  */
-class GObject extends GType
+class GObject extends GTypeInstance
 {
   /* seldom overidden */
   public function constructor(GType                 $type,
