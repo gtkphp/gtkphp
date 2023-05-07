@@ -21,7 +21,9 @@ try {
   Pdf::write($surface, "/path/image.pdf");// cairo_show_page
   Ps::write($surface, "/path/image.ps");// cairo_show_page
   
-  $surface = Jpeg::read("/path/image.jpg");*/
+  $surface = Jpeg::read("/path/image.jpg");
+  cairo_image_surface_create_from_png ("data/romedalen.png");
+  */
   
 } catch (Exception $ex) {
   
