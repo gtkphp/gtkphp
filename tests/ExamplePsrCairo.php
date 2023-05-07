@@ -15,11 +15,12 @@ $cr->stroke ();
 
 try {
   Png::write($surface, "/path/image.png");
-  Jpeg::write($surface, "/path/image.jpg");
+  
+  /*Jpeg::write($surface, "/path/image.jpg");
   Svg::write($surface, "/path/image.svg");// cairo_image_surface_show_page
   Pdf::write($surface, "/path/image.pdf");// cairo_image_surface_show_page
   
-  $surface = Jpeg::read("/path/image.jpg");
+  $surface = Jpeg::read("/path/image.jpg");*/
   
 } catch (Exception $ex) {
   
