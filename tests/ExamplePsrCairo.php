@@ -4,7 +4,8 @@ use Psr\Cairo\Context;
 use Psr\Cairo\PatternFactory;
 use Psr\Cairo\SurfaceFactory;
 
-$surface = SurfaceFactory::createImage(Format::ARGB32, 120, 120);
+$surface = new ImageSurface(Format::ARGB32, 120, 120);
+//$surface = SurfaceFactory::createImage(Format::ARGB32, 120, 120);
 $cr = new Context($surface);
 
 $cr->setLineWidth (0.1);
