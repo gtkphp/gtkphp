@@ -11,5 +11,5 @@ class PngSurface extends AbstractSurface {
    * @throws WriteErrorException if an I/O error occurs while attempting to write the file
    * @throws PngErrorException if libpng returned an error
    */
-  public function write(path $filename);
+  public function write(string $filename);
 }
