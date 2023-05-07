@@ -2,5 +2,5 @@
 
 namespace Psr\Cairo\Surface;
 
-class AbstractSurface {
+class AbstractSurface extends \cairo_surface_t {
 }
