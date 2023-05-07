@@ -17,8 +17,9 @@ try {
   Png::write($surface, "/path/image.png");
   
   /*Jpeg::write($surface, "/path/image.jpg");
-  Svg::write($surface, "/path/image.svg");// cairo_image_surface_show_page
-  Pdf::write($surface, "/path/image.pdf");// cairo_image_surface_show_page
+  Svg::write($surface, "/path/image.svg");// cairo_show_page
+  Pdf::write($surface, "/path/image.pdf");// cairo_show_page
+  Ps::write($surface, "/path/image.ps");// cairo_show_page
   
   $surface = Jpeg::read("/path/image.jpg");*/
   
