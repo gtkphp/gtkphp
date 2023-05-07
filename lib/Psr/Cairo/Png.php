@@ -12,4 +12,9 @@ class Png {
    * @throws PngErrorException if libpng returned an error
    */
   public function write(AbstractSurface $surface, string $filename);
+  
+  /**
+   * @internal cairo_image_surface_create_from_png
+   */
+  public function read(string $filename) : ImageSurface;
 }
