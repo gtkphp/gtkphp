@@ -13,7 +13,7 @@ $cr->rectangle (0.25, 0.25, 0.5, 0.5);
 $cr->stroke ();
 
 try {
-  $surface->write ("/path/image.png");
+  Png::write($surface, "/path/image.png");
 } catch (Exception $ex) {
   
 }
