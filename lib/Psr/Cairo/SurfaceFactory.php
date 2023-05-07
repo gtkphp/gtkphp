@@ -10,9 +10,6 @@ class SurfaceFactory {
   public function createImage(Format $format,
                             int $width,
                             int $height):ImageSurface {}
-  public function createPng(Format $format,
-                            int $width,
-                            int $height):PngSurface {}
   public function createPdf(Format $format,
                             int $width,
                             int $height):PdfSurface {}
