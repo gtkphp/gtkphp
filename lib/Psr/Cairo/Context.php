@@ -5,7 +5,7 @@ namespace Psr\Cairo;
 use Psr\Cairo\PathTrait;
 
 /**
- * @property Surface $target
+ * @property-read Surface $target
  * @property Pattern $source
  */
 class Context extends \cairo_t {
