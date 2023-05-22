@@ -8,8 +8,9 @@ $pattern = new SolidPattern(0.0, 0.0, 1.0);
 $surface = new ImageSurface(Format::ARGB32, 120, 120);
 $cr = new Context($surface);
 
-$cr->setLineWidth (0.1);
-$cr->setSource ($pattern);
+$cr->line_width = 0.1;
+$cr->source = $pattern;
+
 $cr->rectangle (0.25, 0.25, 0.5, 0.5);
 $cr->stroke ();
 
