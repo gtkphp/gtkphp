@@ -1,7 +1,4 @@
 <?php
 
-namespace G;
-
-class Array extends \GArray
-{
-}
+// Do not wrap GArray
+use GArray;
