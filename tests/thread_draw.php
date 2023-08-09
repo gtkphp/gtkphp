@@ -9,6 +9,11 @@
  *   gcc `pkg-config --cflags --libs gtk+-3.0` -lm -lpthread main.c
  *
  * or run: make -B all
+ * CFLAGS = -Wall -g `pkg-config --cflags gtk+-3.0` -lm -lpthread
+ * LDFLAGS = `pkg-config --libs gtk+-3.0`
+ * 
+ * all: main.c
+ * 	$(CC) -o main main.c $(CFLAGS) $(LDFLAGS)
  */
 
 
